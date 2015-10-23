@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/bar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Shipping Policy"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp"
+                android:text="Standard Delivery:
+Deliver with in 7Days, Rupees 100 chargeable if the order value is less then Rs. 10000, above this value it’s absolutely at no cost.
+
+Express Delivery:
+Deliver with in37Days, Rupees 200 chargeable if the order value is less then Rs. 10000, above this value it’s absolutely at no cost.
+
+We strive to deliver your order within as specified time, except for some special orders for which an estimated delivery time is displayed on respective product page. All deliveries will be done till ground floor only and to the point where vehicle is permitted.
+Occasionally, delivery may take longer time due to bad weather, transportation delays, political or technical disruptions and any other circumstances beyond our reasonable control. In all such cases, we shall not be liable for the delay. However we assure you that our Customer Care Centre will proactively reach out to you and make reasonable endeavor to suitably address the issue related to delay and delivery of your order.
+
+Shipping charges must be paid in full at the time of placing of orders in case of Net Banking, RTGS Payments, While in case of COD at the time of receiving the order, except for orders placed on specified PIN codes/Offer only.
+Please check the same before placing the order.
+
+Purchaser needs to check the billed items against the order at the time of taking delivery.
+In case the Purchaser is unable to pick up the goods personally, a nominated representative bearing the relevant authorization letter and copy of membership card can collect the order on purchaser’s behalf.  Purchaser or its authorized representative shall be responsible for checking the billed items against the order.
+
+ In case of any discrepancy, purchaser or its authorized representative should bring it to the attention of the respective Manager-Retail Sales/ Delivery Associate before leaving the stock.
+
+Purchaser or its authorized representative shall sign the duplicate copy of bill after taking delivery of the products.
+The signed copy of bill shall be considered as a proof that the Purchaser has collected the order from Mandikart Technologies Pvt. Ltd. No complaints with regards to shortage or discrepancy of any item will be accepted, after the Purchaser or its authorized representative has signed the duplicate copy of bill.
+
+If you cancel your complete order before dispatch, shipping charges shall be refunded to you (in case of RTGS payments)
+If you wish to return the order delivered to you, it must be in accordance with the return policy. However, in all return cases original shipping charges shall not be refunded to you even if you return only a part of any order delivered to you.
+In some cases your order may be delivered to you in parts on different dates and through different modes of deliveries depending upon various factors including our internal processes. We would like to assure you that we will make every attempt to deliver your product(s) as per your order
+
+*Note - The above door step delivery terms and conditions do not apply to orders placed from Mewat area.
+ For Mewat Area store members, delivery is done by a third party transporter who is engaged by the Purchaser. The Purchaser is required to pay delivery charges to third party transporter upon receipt of goods.
+
+
+Returns Policy
+No Question Ask 3 Day Return/Replacement.
+Any Product/s purchased from Mandikart Technologies Pvt. Ltd.  Can be refunded or exchanged within 3 days from the date of delivery (including the date of delivery).
+
+All returns or exchange can be processed, purchaser is required to visit the my account section at Mandikart mobile app, while at the time of returning the Purchaser send goods and original copy of invoice. .
+We appreciate you for keeping the following in mind:
+⦁	Item(s) being returned must be in their original, unused condition, and returned within 3 days of receipt in the original packing.
+⦁	Original barcodes, tags, labels, and brand packaging should not be tampered with.
+⦁	Sachets/ packets accompanying the item should not be opened/ tampered with.
+⦁	Any product you have received free as a part of any promotion or marketing activity along with the order which you are returning must also be returned in original and saleable condition. We will not be able to process the return if we have not received the free product given with that order.
+⦁	All returns/replacement shall be subject to quality check by Mandikart Technologies Pvt. Ltd
+" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.affordablehomesindia.mandikart;
+package com.affordablehomesindia.app;
 
 import org.junit.Test;
 

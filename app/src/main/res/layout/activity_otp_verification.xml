@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e37720"
+    tools:context="com.mandikart.app.PhoneVerification">
+
+    <TextView
+        android:id="@+id/textEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:text="Kindly enter the OTP code you received."
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textHindi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textEnglish"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:text="कृप्या यहाँ OTP कोड डाले!"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+    <EditText
+        android:id="@+id/otp_number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/phone"
+        android:hint="OTP"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonProceed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phone_dark"
+        android:padding="5dp"
+        android:text="Proceed"
+        android:textColor="@android:color/white" />
+
+    <TextView android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="9560080700"
+        android:layout_below="@id/buttonProceed"/>
+
+    <ImageView android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_create_white_24dp"
+        android:layout_alignTop="@+id/phoneNumber"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/phoneNumber"
+        android:layout_toEndOf="@+id/phoneNumber" />
+
+
+</RelativeLayout>

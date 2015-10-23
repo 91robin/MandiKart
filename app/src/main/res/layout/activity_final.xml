@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mandikart.app.FinalActivity">
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/app_bar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/finishButton"
+        android:layout_below="@+id/bar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/icon_200"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:text="MandiKart\nसे जुड़ने के लिए आपका धन्यवाद ।"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="a\nb\nc"
+            android:textSize="22sp"
+            android:id="@+id/detailOrder"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="किसी ओर अन्य जानकारी के लिए MandiKart ग्राहक सेवा केंद्र पर कॉल करे।  \n 9251211211"/>
+    </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finishButton"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:text="आज के भाव जाने। "
+        android:background="@color/mainColor"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

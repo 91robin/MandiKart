@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/app_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/backImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#90000000"
+                    android:scaleType="centerInside" />
+
+                <ImageView
+                    android:id="@+id/product_primary_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitEnd" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Shagun Atta"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/product_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_name"
+                android:layout_marginLeft="20dp"
+                android:text="Shagun"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/our_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_brand"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="MandiKart Price : Rs. 200"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/real_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/our_price"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Market Price : Rs. 250"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/packSizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/real_price"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unit"
+                    android:onClick="packsize"
+                    android:text="Unit Pack Size"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="packsize"
+                    android:id="@+id/shipper"
+                    android:text="Shipper Pack Size"/>
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/packSizes">
+
+                <Button
+                    android:id="@+id/addedButton"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/mainColor"
+                    android:drawableLeft="@drawable/ic_done_white_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="10dp"
+                    android:text="Added"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/addButton"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/mainColor"
+                    android:drawableLeft="@drawable/ic_shopping_cart_white_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Add"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/product_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white">
+
+                    <Button
+                        android:id="@+id/increment"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/oval_button"
+                        android:text="+"
+                        android:textColor="@color/mainColor"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/quantity"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_text_product"
+                        android:inputType="number"
+                        android:text="12sp"
+                        android:textAlignment="center" />
+
+                    <Button
+                        android:id="@+id/decrement"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/oval_button"
+                        android:text="-"
+                        android:textColor="@color/mainColor"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttons"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:padding="5dp"
+                android:text="Shagun Atta is made from the selected quality golden wheat grains using state -of -the art hygienic process that secures the nutrient value of each other.Best quality wheat is selected from various of the country,clean with latest machines and grind traditionally in Chakkis."
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
