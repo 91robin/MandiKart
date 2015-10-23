@@ -1,8 +1,135 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainColor"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context="com.affordablehomesindia.mandikart.NavigationDrawerFragment">
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/home"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingLeft="16dp"
+                android:background="@drawable/icon_100"
+                android:gravity="center_vertical"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/my_kart"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="My Cart"
+                android:textColor="@color/primaryTextColor"/>
+
+            <Button
+                android:id="@+id/edit_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="Edit Pincode"
+                android:textColor="@color/primaryTextColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#848484" />
+
+            <Button
+                android:id="@+id/how_do_register"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="How Do I Register"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/payment_policy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="Payment Policy"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/shipping_policy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="Shipping Policy"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/about_us"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="About Us"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/about_team"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="About Team"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/follow_fb"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="Follow Us On Facebook"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/follow_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="Follow Us On Twitter"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawer_item_selector"
+                android:text="Contact Us"
+                android:textColor="@color/primaryTextColor" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

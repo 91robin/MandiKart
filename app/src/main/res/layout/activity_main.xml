@@ -1,84 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainDrawer"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/mainLayout"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/mainDrawer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_below="@id/app_bar"
+        android:background="#EEEEEE">
 
-        <include
-            android:id="@+id/app_bar"
-            layout="@layout/app_bar" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mainLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/app_bar"
             android:orientation="vertical">
 
-            <android.support.v4.view.ViewPager
-                android:id="@+id/viewPager"
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="5dp"
-                android:background="@drawable/background" />
+                android:layout_height="45dp"
+                android:background="@color/mainColor">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/background"
-                android:orientation="horizontal">
-
-                <TextView android:id="@+id/shop_by_category"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:text="Shop By Category"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp" />
-
-                <Button
-                    android:id="@+id/categoryMore"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/more_button"
-                    android:text="More"
-                    android:textColor="@android:color/white" />
-
-                <TextView android:id="@+id/result"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
-                    android:text="Result"
-                    android:layout_below="@id/shop_by_category"/>
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_search_white_36dp" />
+
+                    <EditText
+                        android:id="@+id/searchText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_edittext"
+                        android:hint="आज का भाव ?"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:textColor="@color/mainColor"
+                        android:textColorHint="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/black_board">
+
+                        <ListView
+                            android:id="@+id/cheapProductsList"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:scrollbars="none"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/categoryTile"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/indianspices"/>
+
+                        <TextView
+                            android:id="@+id/categoryName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="Shop by Categories"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/background"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/brandTile"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/brand" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background"
+                            android:gravity="bottom"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:paddingLeft="5dp"
+                            android:text="Shop By Brand"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/agriTile"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/agriculture" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background"
+                            android:gravity="bottom"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Agriculture Products"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/farmingTile"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/farming" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background"
+                            android:gravity="bottom"
+                            android:paddingBottom="5dp"
+                            android:layout_alignParentBottom="true"
+                            android:paddingLeft="5dp"
+                            android:text="Farming Products"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cheapProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="2dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/discount" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background"
+                            android:gravity="bottom"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:text="आज के सबसे सस्ते Products"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:drawableLeft="@drawable/ic_call_white_48dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="खरीदने के लिए संपर्क करे!\n9251212212"
+                        android:textColor="@color/mainColor"
+                        android:textSize="22sp"/>
 
 
-            </RelativeLayout>
-
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
 
+        <fragment
+            android:id="@+id/mainFragment"
+            android:name="com.affordablehomesindia.mandikart.NavigationDrawerFragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            tools:layout="@layout/fragment_navigation_drawer" />
 
-    </RelativeLayout>
-
-    <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.affordablehomesindia.mandikart.NavigationDrawerFragment"
-        android:layout_width="280dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        tools:layout="@layout/fragment_navigation_drawer" />
-
-</android.support.v4.widget.DrawerLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

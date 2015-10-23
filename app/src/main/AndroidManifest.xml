@@ -1,25 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.affordablehomesindia.mandikart" >
+    package="com.affordablehomesindia.mandikart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon_100"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".CategoryActivity"
+            android:label="Category" />
+        <activity android:name=".ProductList"
+            android:label="Products" />
+        <activity android:name=".ProductDescription"
+            android:label="Product Description" />
+        <activity android:name=".CitySelection" />
+        <activity android:name=".StartupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NextActivity" />
+        <activity
+            android:name=".PhoneVerification"
+            android:label="Phone Verification" />
+        <activity android:name=".OtpVerification">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.affordablehomesindia.mandikart.PhoneVerification" />
+        </activity>
+        <activity android:name=".EditPincode" />
+        <activity
+            android:name=".AboutTeam"
+            android:label="About Team" />
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us" />
+        <activity
+            android:name=".ShippingPolicy"
+            android:label="Shiping Policy" />
+        <activity
+            android:name=".HowRegister"
+            android:label="How to Register" />
+        <activity
+            android:name=".PaymentPolicy"
+            android:label="Payment Policy" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".SingleItemView"
+            android:label="Product Description" />
+        <activity
+            android:name=".CartActivity"
+            android:label="Your Cart" />
+        <activity
+            android:name=".CheckOutActivity"
+            android:label="Checkout " />
+        <activity
+            android:name=".RegistrationForm"
+            android:label="Enter your details" />
+        <activity
+            android:name=".FinalActivity"
+            android:label="Order Details"/>
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="How Do I Register ?"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/primaryTextColor"
+                android:text="You can register while checkout at Mandikart Mobile App. Kindly provides the information in the form that appears. You can review the terms and conditions, provide your payment mode details and submit the registration information.\nPurchaser is liable to ensure that his / her login id and password is not disclosed or transferred to any other person. Purchaser should have a valid/active e-mail id/Phone no for registering onto Mandikart mobile app.\n\nARE THERE ANY CHARGES FOR REGISTRATION?
+No. Registration on Mandikart Mobile App is absolutely free.\n\nDO I HAVE TO NECESSARILY REGISTER TO SHOP ON SRSGROCERY.COM?\nNo, you can surf and add products to the cart without registration but you will be able to checkout and place orders only when you give in your Contact Phone number.\n\nWe recommend you to register with us as it will help you to have all updates/offers from Mandikart on regular basis.
+" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

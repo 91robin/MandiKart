@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="About Team"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/sanjay_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/sanjay_bansal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/sanjay_photo"
+                    android:gravity="center_vertical"
+                    android:text="Sanjay Bansal (Founder and CEO MandiKart)"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="A scrupulous thinker and an retailer to the core !\nHe is a person who will persistently try to improvise, innovate and believes in improvising the societal standards.\n\nHe believe in value addition to human life because he believe money you make out of society has to go back for betterment of society only.\n\nHe did Bachelor’s from Hindu college in 2000 and PG in Retail Management with India’s Leading Retail Brand Pantaloon Retail in 2009. He had worked for around 13+ years with Pharma/ Real estate/ FMCG Brands at different level and Geography in India.\n\nHe had encountered with challenges of Farmers/Kirana stores/Kiosk’s as well the Farmers/Processing units and FMCG Brands, their he had realized the need of a Professional and Technological Platform to minimize the challenges’ and entered into professional Food/FMCG/Agro Products Distribution Model “Mandikart” along with his friends and IT Engineers (Android Developers)."
+                android:gravity="left"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/robin_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/robin_goyal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/robin_photo"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14sp"
+                    android:text="Robin Goel (Co-Founder and CTO)"
+                    android:textColor="@color/primaryTextColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/ceo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ceo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ceo"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14sp"
+                    android:text="Shivam Satija (Android Developer)(pursuing B.Tech from Hindu College Of Engineering)"
+                    android:textColor="@color/primaryTextColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/shanky_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/owner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/shanky_photo"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14sp"
+                    android:text="Intruder Shanky a.k.a Aakash Jain(Android Developer)(pusuing B.Tech from Hindu College Of Engineering)"
+                    android:textColor="@color/primaryTextColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/ajay"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ajay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ajay"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14sp"
+                    android:text="Ajay Goel (DB Manager)(pursuing M.TECH from Thappar University)"
+                    android:textColor="@color/primaryTextColor" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

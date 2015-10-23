@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e37720"
+    tools:context="com.affordablehomesindia.mandikart.PhoneVerification">
+
+    <TextView android:id="@+id/textEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kindly enter your city name."
+        android:layout_marginTop="120dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="कृप्या अपने शहर का नाम डाले !"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/textEnglish"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:background="@drawable/spinner"
+        android:hint="Enter your city name"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phone_dark"
+        android:text="Proceed"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/spinner"
+        android:id="@+id/buttonProceed" />
+
+
+</RelativeLayout>

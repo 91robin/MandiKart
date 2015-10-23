@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/app_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="About Us"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/primaryTextColor"
+                android:textAlignment="viewStart"
+                android:text="Every year 15 to 30 per cent of the agricultural produce are damaged either due to the absence of proper storage facilities. Thus, the farmers are forced to sell their surplus produce just after harvests at a very low and un-remunerative price to the middleman but these Dalal’s stock and sell when there is short supply of those products at higher price to the end consumers.
+ \n\nSimilarly there are estimated 12Million Kiran store’s in India, as much 90% are not directly serviced by Indian’s FMCG Major’s, due to Logistics, Inventories, Distribution challenges, which derive market for low Quality Products in Rural/Semi-Rural part of India.
+\n\nTo minimize these challenges Mandikart has Designed and Developed a technological platforms along with Quality Warehouses/Logistic System to facilitate Farmers/Agro Processing units/FMCG Co. to sell directly to the Farmers/Kirana Stores/ Mom and Pop shop’s/E-Stores at Rural, Semi-Urban, Urban part of NCR initially.
+ \n\nMandikart technological platform will ensure Direct Price/Quality Benefit, On Time Delivery and many other unique values to the Servicing area, thus better end Consumer’s experiences.
+" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"/>
+
+    <Spinner android:id="@+id/edit_pincode"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="250dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:background="@drawable/spinner"
+        android:hint="Enter your city name"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phone_dark"
+        android:text="Save"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/edit_pincode"
+        android:id="@+id/save_pincode" />
+
+</RelativeLayout>

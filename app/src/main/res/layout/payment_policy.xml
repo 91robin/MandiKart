@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/app_bar"
+        android:id="@+id/bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Payment Policy"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp"
+                android:text="Payment Methods:
+Cash On delivery
+By cheque/Demand Draft in favour of Mandikart Technologies Pvt Ltd
+
+Payment Terms and Conditions
+
+Payment on presentation of the invoice , No Credit Policy
+RTGS:
+
+Payment can be transferred into our bank account
+Bank Name	HDFC Bank Ltd
+A/c No	50200013257015
+Branch Address	JMD Megapolish, Sohna Road, Gurgaon
+IFSC Code	HDFC0003648
+MICR Code	110240344
+Account Holder Name	Mandikart Technologies Pvt Ltd
+0)
+Online payment can be made through Net banking/RTGS currently
+0.	It is the responsibility of the member to ensure that he/she uses only their own card/bank account for online purchases.
+1.	In case Your account has been debited after a payment failure, debited amount will roll back to Your respective account within 7 working days
+2.	Orders will be serviced only after receipt of confirmation of payment from the payment gateway.
+NOTE: Please ensure that you use your own card / Bank Account for online purchases
+" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
